@@ -24,10 +24,10 @@ const { title, farve } = Astro.props;
   <body class={Astro.props.farve}>
     <header>
       <Header />
-      <Banner />
     </header>
 
     <main class="mt-16 mx-6 md:mx-0">
+      <Banner />
       <slot />
     </main>
 
