@@ -1,5 +1,76 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
 ---
-<div>
-Header - tilføj navigation mm.
+
+<div
+  x-data="{ showmenu: false }"
+  class="p-5 top-0 w-full bg-[#0D2032] mb-10 lg:mb-15"
+>
+  <div id="navbar" class="flex flex-row justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="w-28">
+      <Image src={logo} alt="" />
+    </a>
+    <!-- Desktop menu -->
+    <nav id="desktopmenu" class="hidden lg:block">
+      <ul class="flex flex-row gap-4 items-center">
+        <li class="mr-2 hover:border-b-[1px]">
+          <a href="/how">How to</a>
+        </li>
+        <li class="mr-2 hover:border-b-[1px]">
+          <a href="/registrer">Registrer bidrag</a>
+        </li>
+        <a href="/registrer">
+          <button
+            class="bg-[#FF8F60] w-fit py-3 px-5 text-center rounded-3xl font-poppins text-lg hover:scale-105 duration-500"
+            >Registrer bidrag</button
+          >
+        </a>
+      </ul>
+    </nav>
+    <!-- Burger menu -->
+    <button
+      id="burgermenu"
+      class="lg:hidden text-white"
+      x-on:click="showmenu = ! showmenu"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-9"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobil menu -->
+  <nav
+    id="mobilmenu"
+    class="flex flex-col content-center pt-4"
+    x-show="showmenu"
+    x-transition
+    x-on:click="showmenu = false"
+    x-on:click.outside="showmenu = false"
+  >
+    <ul class="flex flex-col items-center pb-5">
+      <li class="text-center py-2">
+        <a href="/how">How to</a>
+      </li>
+      <li class="text-center py-2">
+        <a href="/registrer">Registrer bidrag</a>
+      </li>
+      <a href="/registrer" class="mt-4">
+        <button
+          class="bg-[#FF8F60] w-fit py-3 px-5 text-center rounded-3xl font-poppins text-lg hover:scale-105 duration-500"
+          >Registrer bidrag</button
+        >
+      </a>
+    </ul>
+  </nav>
 </div>
