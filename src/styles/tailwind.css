@@ -15,7 +15,7 @@
   }
 
   p {
-    @apply font-poppins text-base text-white max-w-prose;
+    @apply font-poppins text-base text-white max-w-prose leading-8;
   }
 
   label,
