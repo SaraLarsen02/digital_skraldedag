@@ -15,10 +15,12 @@
   }
 
   p {
-    @apply font-poppins text-base text-white;
+    @apply font-poppins text-base text-white max-w-prose;
   }
 
-  label, input, li {
+  label,
+  input,
+  li {
     @apply font-poppins text-xl text-white;
   }
 
