@@ -1,0 +1,95 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+---
+
+<MainLayout title="Registrer bidrag" color="bg-black">
+  <section class="max-w-fit mx-auto bg-[#0D2032] p-10 lg:p-16 rounded-3xl">
+    <h2 class="pb-4 lg:pb-6">Registrer dit bidrag</h2>
+    <div>
+      <form class="grid grid-cols-1 gap-6">
+        <!-- Fornavn -->
+        <div class="flex flex-col gap-1">
+          <label for="fornavn">Fornavn:</label>
+          <input
+            class="block w-full rounded-lg bg-[#1B354E] border-none placeholder:text-[#5389BC] placeholder:font-poppins text-white"
+            type="text"
+            name="fornavn"
+            id="fornavn"
+            placeholder="Anders"
+          />
+        </div>
+
+        <!-- Efternavn -->
+        <div class="flex flex-col gap-1">
+          <label for="efternavn">Efternavn:</label>
+          <input
+            class="block w-full rounded-lg bg-[#1B354E] border-none placeholder:text-[#5389BC] placeholder:font-poppins"
+            type="text"
+            name="efternavn"
+            id="efternavn"
+            placeholder="Andersen"
+          />
+        </div>
+
+        <!-- Email -->
+        <div class="flex flex-col gap-1">
+          <label for="email">Email:</label>
+          <input
+            class="block w-full rounded-lg bg-[#1B354E] border-none placeholder:text-[#5389BC] placeholder:font-poppins"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="andersandersen@mail.com"
+          />
+        </div>
+
+        <!-- Data slettet -->
+        <div class="flex flex-col gap-1">
+          <label for="data">Data slettet (GB):</label>
+          <input
+            class="block max-w-28 rounded-lg bg-[#1B354E] border-none placeholder:text-[#5389BC] placeholder:font-poppins"
+            type="number"
+            name="data"
+            id="data"
+            placeholder="1"
+          />
+        </div>
+
+        <!-- Betingelser -->
+        <div class="flex flex-row gap-3 items-center">
+          <input
+            class="rounded-sm bg-[#1B354E] border-none size-5"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+          />
+          <label for="checkbox"
+            >Jeg accepterer Digital Skraldedag’s betingelser.</label
+          >
+        </div>
+
+        <!-- Nyheder -->
+        <div class="flex flex-row gap-3 items-center">
+          <input
+            class="rounded-sm bg-[#1B354E] border-none size-5"
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+          />
+          <label for="checkbox"
+            >Ja, jeg vil gerne modtage nyheder på email.</label
+          >
+        </div>
+
+        <!-- Knap -->
+        <div
+          class="bg-[#FF8F60] w-full py-3 text-center mx-auto rounded-2xl mt-6 text-white font-poppins text-xl hover:scale-105 duration-500 cursor-pointer"
+        >
+          <button>Registrer bidrag</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</MainLayout>
