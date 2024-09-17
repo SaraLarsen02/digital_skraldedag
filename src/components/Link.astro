@@ -1,6 +1,11 @@
 ---
 // Henter parametrene fra Astro.props
-const { href = "#", target = "_self", variant = "textlink", size = "standard" } = Astro.props;
+const {
+  href = "#",
+  target = "_self",
+  variant = "textlink",
+  size = "standard",
+} = Astro.props;
 
 const linkStyling = "text-white rounded-full";
 const variantClasses = {
@@ -15,4 +20,9 @@ const sizeClasses = {
 };
 ---
 
-<a href={href} target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot /></a>
+<a
+  href={href}
+  target={target}
+  class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}
+  ><slot /></a
+>
