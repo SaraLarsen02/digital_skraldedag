@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../assets/images/logo.svg";
+import Link from "../components/Link.astro";
 ---
 
 <div
@@ -21,12 +22,9 @@ import logo from "../assets/images/logo.svg";
         <li class="mr-2 hover:border-b-[1px]">
           <a href="/registrer">Registrer bidrag</a>
         </li>
-        <a href="/registrer">
-          <button
-            class="bg-[#FF8F60] w-fit py-3 px-5 text-center rounded-3xl font-poppins text-lg hover:scale-105 duration-500"
-            >Registrer bidrag</button
-          >
-        </a>
+        <Link href="/registrer" variant="primary" size="small"
+          >Registrer bidrag
+        </Link>
       </ul>
     </nav>
     <!-- Burger menu -->
@@ -65,12 +63,11 @@ import logo from "../assets/images/logo.svg";
       <li class="text-center py-2">
         <a href="/registrer">Registrer bidrag</a>
       </li>
-      <a href="/registrer" class="mt-4">
-        <button
-          class="bg-[#FF8F60] w-fit py-3 px-5 text-center rounded-3xl font-poppins text-lg hover:scale-105 duration-500"
-          >Registrer bidrag</button
-        >
-      </a>
+      <div class="mt-4">
+        <Link href="/registrer" variant="primary" size="small"
+          >Registrer bidrag
+        </Link>
+      </div>
     </ul>
   </nav>
 </div>
