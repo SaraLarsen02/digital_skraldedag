@@ -4,15 +4,102 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import hero_img from "../assets/images/hero_img.webp";
+import spoergsmaalstegn from "../assets/images/spoergsmaalstegn.svg";
+import jordklode from "../assets/images/jordklode.svg";
+import enheder from "../assets/images/enheder.svg";
+import deling from "../assets/images/deling.svg";
+import datalagring from "../assets/images/datalagring.svg";
+import kapacitet from "../assets/images/kapacitet.svg";
+import vidste_1 from "../assets/images/vidste_1.svg";
+import vidste_2 from "../assets/images/vidste_2.svg";
+import vidste_3 from "../assets/images/vidste_3.svg";
+import skraldespand from "../assets/images/skraldespand.webp";
 ---
 
 <MainLayout title="Titel">
-  <article>
+  <!-- Hero -->
+  <article class="mx-5 md:mx-20">
+    <section class="md:grid md:grid-cols-5">
+      <div class="col-span-2">
+        <h1>Digital Skraldedag</h1>
+        <p>Ryd op i dit digitale affald!</p>
+        <div>
+          <button class="bg-red-500 p-2">Læs mere</button>
+          <button class="bg-red-500 p-2">Læs mere</button>
+        </div>
+      </div>
+      <Image src={hero_img} class="w-full col-span-3" alt="" />
+    </section>
+
+    <!-- Hvad er Digital Skraldedag? -->
+    <section class="md:grid md:grid-cols-5">
+      <div class="col-span-3">
+        <h2>Hvad er Digital Skraldedag?</h2>
+        <p>
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
+          omstrukturere deres online tilstedeværelse.
+        </p>
+      </div>
+      <Image src={spoergsmaalstegn} class="mx-auto col-span-2" alt="" />
+    </section>
+
+    <!-- Hvorfor slippe af med digitalt skrald? -->
+    <section>
+      <h2 class="md:text-center">Hvorfor slippe af med digitalt skrald?</h2>
+      <div class="md:grid md:grid-cols-3">
+        <div>
+          <Image src={jordklode} class="mx-auto" alt="" />
+          <h3 class="text-center">Hjælper med at reducere CO2-udledning</h3>
+        </div>
+        <div>
+          <Image src={enheder} class="mx-auto" alt="" />
+          <h3 class="text-center">Forlænger dine enheders levetid</h3>
+        </div>
+        <div>
+          <Image src={deling} class="mx-auto" alt="" />
+          <h3 class="text-center">Fremskynder deling og søgning af information</h3>
+        </div>
+      </div>
+      <div class="md:grid md:grid-cols-2">
+        <div>
+          <Image src={datalagring} class="mx-auto" alt="" />
+          <h3 class="text-center">Reducerer datalagring sikkerhedsrisici</h3>
+        </div>
+        <div>
+          <Image src={kapacitet} class="mx-auto" alt="" />
+          <h3 class="text-center">Øger lagring og server kapacitet</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vidste du... -->
+    <section class="md:grid md:grid-cols-5">
+      <Image src={vidste_1} class="mx-auto col-span-2" alt="" />
+      <p class="col-span-3">Vidste du... at en e-mail udleder i gennemsnit 4 g CO2. Det svarer til det CO2-aftryk, som en tændt pære har i 6 minutter!</p>
+    </section>
+
+    <!-- Registrer dit bidrag -->
+    <section class="md:grid md:grid-cols-2">
+      <div>
+        <h2>Registrer dit bidrag</h2>
+        <p>
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
+          omstrukturere deres online tilstedeværelse.
+        </p>
+        <button class="bg-red-500 p-2">Læs mere</button>
+      </div>
+      <Image src={skraldespand} alt="" />
+    </section>
+
+    <!-- <div class="bg-black">
+      <p class="text-blue-800">prøver lige</p>
+    </div>
     <h1>Index overskrift</h1>
     <h1>hej</h1>
     <h2>Index overskrift</h2>
     <Button>Klik!</Button>
     <p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
     <Image src={hero_img} alt="" />
+    <p></p> -->
   </article>
 </MainLayout>

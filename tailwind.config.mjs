@@ -7,14 +7,14 @@ export default {
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
 };
 
-const defaultTheme = require("tailwindcss/defaultTheme");
+// const defaultTheme = require("tailwindcss/defaultTheme");
 
-module.exports = {
-  theme: {
-    extend: {
-      fontFamily: {
-        poppins: ['"Poppins"', ...defaultTheme.fontFamily.sans],
-      },
-    },
-  },
-};
+// module.exports = {
+//   theme: {
+//     extend: {
+//       fontFamily: {
+//         poppins: ['"Poppins"', ...defaultTheme.fontFamily.sans],
+//       },
+//     },
+//   },
+// };

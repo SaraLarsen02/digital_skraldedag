@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
+  /* h1 {
     @apply font-poppins text-[65px] font-semibold text-white;
   }
   h2 {
@@ -16,5 +16,5 @@
 
   p {
     @apply font-poppins text-base text-white;
-  }
+  } */
 }
