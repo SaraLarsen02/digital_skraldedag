@@ -17,4 +17,12 @@
   p {
     @apply font-poppins text-base text-white;
   }
+
+  label, input, li {
+    @apply font-poppins text-xl text-white;
+  }
+
+  li {
+    @apply font-poppins text-lg text-white;
+  }
 }
