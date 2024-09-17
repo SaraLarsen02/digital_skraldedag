@@ -17,25 +17,28 @@ import skraldespand from "../assets/images/skraldespand.webp";
 ---
 
 <MainLayout title="Forside" farve="bg-blaa">
-  <!-- Hero -->
-  <article class="mx-5 md:mx-20">
+  <article class="mx-5 md:mx-28 flex flex-col gap-32">
+    <!-- Hero -->
     <section class="md:grid md:grid-cols-5">
-      <div class="col-span-2">
-        <h1>Digital Skraldedag</h1>
-        <p>Ryd op i dit digitale affald!</p>
-        <div>
-          <button class="bg-red-500 p-2">Læs mere</button>
-          <button class="bg-red-500 p-2">Læs mere</button>
+      <div class="col-span-2 grid gap-10 md:my-auto">
+        <h1 class="leading-tight">Digital Skraldedag</h1>
+        <p class="font-poppins md:text-[37px]">Ryd op i dit digitale affald!</p>
+        <div class="flex flex-row gap-10 md:my-5">
+          <Link href="#" target="_blank" variant="primary" size="small">Save the date</Link>
+          <Link href="#" target="_blank" variant="primary" size="small">Del med ven</Link>
         </div>
       </div>
       <Image src={hero_img} class="w-full col-span-3" alt="" />
     </section>
 
     <!-- Hvad er Digital Skraldedag? -->
-    <section class="md:grid md:grid-cols-5">
-      <div class="col-span-3">
+    <section class="bg-moerkeblaa rounded-3xl p-40 md:grid md:grid-cols-5">
+      <div class="col-span-3 flex flex-col gap-10 my-auto">
         <h2>Hvad er Digital Skraldedag?</h2>
-        <p>Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
+        <p>
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
+          omstrukturere deres online tilstedeværelse.
+        </p>
       </div>
       <Image src={spoergsmaalstegn} class="mx-auto col-span-2" alt="" />
     </section>
@@ -43,44 +46,49 @@ import skraldespand from "../assets/images/skraldespand.webp";
     <!-- Hvorfor slippe af med digitalt skrald? -->
     <section>
       <h2 class="md:text-center">Hvorfor slippe af med digitalt skrald?</h2>
-      <div class="md:grid md:grid-cols-3">
+      <div class="md:grid md:grid-cols-3 mt-24 mb-12">
         <div>
-          <Image src={jordklode} class="mx-auto" alt="" />
-          <h3 class="text-center">Hjælper med at reducere CO2-udledning</h3>
+          <Image src={jordklode} class="mx-auto pb-6" alt="" />
+          <h3 class="text-center">Hjælper med at reducere <br />CO2-udledning</h3>
         </div>
         <div>
-          <Image src={enheder} class="mx-auto" alt="" />
-          <h3 class="text-center">Forlænger dine enheders levetid</h3>
+          <Image src={enheder} class="mx-auto pb-6" alt="" />
+          <h3 class="text-center">Forlænger dine <br />enheders levetid</h3>
         </div>
         <div>
-          <Image src={deling} class="mx-auto" alt="" />
-          <h3 class="text-center">Fremskynder deling og søgning af information</h3>
+          <Image src={deling} class="mx-auto pb-6" alt="" />
+          <h3 class="text-center">Fremskynder deling og <br />søgning af information</h3>
         </div>
       </div>
-      <div class="md:grid md:grid-cols-2">
+      <div class="md:grid md:grid-cols-2 md:mx-48">
         <div>
-          <Image src={datalagring} class="mx-auto" alt="" />
-          <h3 class="text-center">Reducerer datalagring sikkerhedsrisici</h3>
+          <Image src={datalagring} class="mx-auto pb-6" alt="" />
+          <h3 class="text-center">Reducerer datalagring <br />sikkerhedsrisici</h3>
         </div>
         <div>
-          <Image src={kapacitet} class="mx-auto" alt="" />
-          <h3 class="text-center">Øger lagring og server kapacitet</h3>
+          <Image src={kapacitet} class="mx-auto pb-6" alt="" />
+          <h3 class="text-center">Øger lagring og server <br />kapacitet</h3>
         </div>
       </div>
     </section>
 
     <!-- Vidste du... -->
-    <section class="md:grid md:grid-cols-5">
+    <section class="md:grid md:grid-cols-5 bg-moerkeblaa rounded-3xl p-32">
       <Image src={vidste_1} class="mx-auto col-span-2" alt="" />
       <p class="col-span-3">Vidste du... at en e-mail udleder i gennemsnit 4 g CO2. Det svarer til det CO2-aftryk, som en tændt pære har i 6 minutter!</p>
     </section>
 
     <!-- Registrer dit bidrag -->
-    <section class="md:grid md:grid-cols-2">
-      <div>
+    <section class="bg-orange md:py-10 md:px-32 md:grid md:grid-cols-2 gap-28">
+      <div class="grid align-middle md:my-10">
         <h2>Registrer dit bidrag</h2>
-        <p>Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og omstrukturere deres online tilstedeværelse.</p>
-        <button class="bg-red-500 p-2">Læs mere</button>
+        <p>
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
+          omstrukturere deres online tilstedeværelse.
+        </p>
+        <div class="md:mt-4">
+          <Link href="#" target="_blank" variant="secondary" size="small">Del med ven</Link>
+        </div>
       </div>
       <Image src={skraldespand} alt="" />
     </section>
