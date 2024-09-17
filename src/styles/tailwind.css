@@ -19,9 +19,8 @@
   }
 
   label,
-  input,
-  li {
-    @apply font-poppins text-xl text-white;
+  input {
+    @apply font-poppins text-lg md:text-xl text-white;
   }
 
   li {
