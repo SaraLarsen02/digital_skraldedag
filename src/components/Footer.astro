@@ -1,6 +1,60 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.svg";
+import deltagere from "../assets/images/deltagere.svg";
+import data from "../assets/images/data.svg";
+import jordklode from "../assets/images/jordklode.svg";
+import instagram from "../assets/images/instagram.svg";
+import facebook from "../assets/images/facebook.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import tiktok from "../assets/images/tiktok.svg";
+import x from "../assets/images/x.svg";
+import youtube from "../assets/images/youtube.svg";
 ---
+
 <div>
-<p>Footer - tilføj footerindhold</p>
+  <div
+    class="bg-[#0D2032] flex flex-col lg:flex-row justify-center gap-16 lg:gap-40 text-center p-20 mt-10 lg:mt-15 items-center"
+  >
+    <div>
+      <Image src={deltagere} alt="" />
+      <h3 class="pt-4">Deltagere</h3>
+    </div>
+    <div>
+      <Image src={data} alt="" />
+      <h3 class="pt-4">Data slettet</h3>
+    </div>
+    <div>
+      <Image src={jordklode} alt="" />
+      <h3 class="pt-3">Co2 forhindret årligt</h3>
+    </div>
+  </div>
+  <div
+    class="bg-[#001324] p-10 flex flex-col gap-10 lg:flex-row justify-between items-center"
+  >
+    <a href="/">
+      <Image src={logo} alt="" />
+    </a>
+    <div class="flex flex-row gap-4 items-end">
+      <a href="https://www.instagram.com/worldcleanupday.global" target="_blank"
+        ><Image src={instagram} alt="" /></a
+      >
+      <a href="https://www.facebook.com/worldcleanupday.global" target="_blank"
+        ><Image src={facebook} alt="" /></a
+      >
+      <a
+        href="https://www.linkedin.com/company/world-cleanup-day-official/"
+        target="_blank"><Image src={linkedin} alt="" /></a
+      >
+      <a href="https://www.tiktok.com/@worldcleanupday.global" target="_blank"
+        ><Image src={tiktok} alt="" /></a
+      >
+      <a href="https://x.com/letsdoitworld" target="_blank"
+        ><Image src={x} alt="" /></a
+      >
+      <a href="https://www.youtube.com/worldcleanupday" target="_blank"
+        ><Image src={youtube} alt="" /></a
+      >
+    </div>
+  </div>
 </div>
-  
