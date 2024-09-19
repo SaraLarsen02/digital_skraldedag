@@ -20,25 +20,45 @@ import Karrusel from "../components/Karrusel.astro";
     <section class="mx-2 md:mx-28 md:grid md:grid-cols-5">
       <div class="col-span-2 grid gap-5 md:gap-10 md:my-auto">
         <h1 class="leading-tight">Digital Skraldedag</h1>
-        <p class="font-poppins text-[20px] md:text-[37px]">Ryd op i dit digitale affald!</p>
+        <p class="font-poppins text-[20px] md:text-[37px]">
+          Ryd op i dit digitale affald!
+        </p>
         <div class="flex flex-row gap-5 md:gap-10 md:my-5">
-          <Link href="#" target="_blank" variant="primary" size="small">Save the date</Link>
-          <Link href="#" target="_blank" variant="primary" size="small">Del med ven</Link>
+          <Link href="#" target="_blank" variant="primary" size="small"
+            >Save the date</Link
+          >
+          <Link href="#" target="_blank" variant="primary" size="small"
+            >Del med ven</Link
+          >
         </div>
       </div>
-      <Image src={hero_img} class="w-full col-span-3 mt-10" alt="To personer smider filer i skraldespanden" />
+      <Image
+        src={hero_img}
+        class="w-full col-span-3 mt-10"
+        alt="To personer smider filer i skraldespanden"
+      />
     </section>
 
     <!-- Hvad er Digital Skraldedag? -->
-    <section class="mx-2 md:mx-28 bg-moerkeblaa rounded-3xl px-6 py-10 md:p-40 md:grid md:grid-cols-5 mitelement">
+    <section
+      class="mx-2 md:mx-28 bg-moerkeblaa rounded-3xl px-6 py-10 md:p-40 md:grid md:grid-cols-5 mitelement"
+    >
       <div class="col-span-3 flex flex-col gap-3 md:gap-10 my-auto">
         <h2>Hvad er Digital Skraldedag?</h2>
         <p>
-          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
-          omstrukturere deres online tilstedeværelse.
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores
+          digitale liv, ligesom vi rydder op i vores fysiske miljø på World
+          Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World,
+          har Digital Cleanup Day til formål at øge bevidstheden om digital
+          forurening og opfordre enkeltpersoner og virksomheder til at rydde op
+          og omstrukturere deres online tilstedeværelse.
         </p>
       </div>
-      <Image src={spoergsmaalstegn} class="mx-auto col-span-2 p-10 md:p-0" alt="Illustration af spørgsmålstegn" />
+      <Image
+        src={spoergsmaalstegn}
+        class="mx-auto col-span-2 p-10 md:p-0"
+        alt="Illustration af spørgsmålstegn"
+      />
     </section>
 
     <!-- Hvorfor slippe af med digitalt skrald? -->
@@ -46,17 +66,29 @@ import Karrusel from "../components/Karrusel.astro";
       <h2 class="text-center">Hvorfor slippe af med digitalt skrald?</h2>
       <div class="grid gap-20 md:grid-cols-3 mt-8 md:mt-24 mb-12">
         <div class="">
-          <Image src={jordklode} class="mx-auto pb-6" alt="Illustration af jordklode" />
+          <Image
+            src={jordklode}
+            class="mx-auto pb-6"
+            alt="Illustration af jordklode"
+          />
           <h3 class="text-center">
             Hjælper med at reducere <br />CO2-udledning
           </h3>
         </div>
         <div class="">
-          <Image src={enheder} class="mx-auto pb-6" alt="Illustration af elektroniske enheder" />
+          <Image
+            src={enheder}
+            class="mx-auto pb-6"
+            alt="Illustration af elektroniske enheder"
+          />
           <h3 class="text-center">Forlænger dine <br />enheders levetid</h3>
         </div>
         <div class="">
-          <Image src={deling} class="mx-auto pb-6" alt="Illustration af deling af filer" />
+          <Image
+            src={deling}
+            class="mx-auto pb-6"
+            alt="Illustration af deling af filer"
+          />
           <h3 class="text-center">
             Fremskynder deling og <br />søgning af information
           </h3>
@@ -64,13 +96,21 @@ import Karrusel from "../components/Karrusel.astro";
       </div>
       <div class="grid gap-20 md:grid-cols-2 md:mx-48">
         <div class="">
-          <Image src={datalagring} class="mx-auto pb-6" alt="Illustration af datalagring" />
+          <Image
+            src={datalagring}
+            class="mx-auto pb-6"
+            alt="Illustration af datalagring"
+          />
           <h3 class="text-center">
             Reducerer datalagring <br />sikkerhedsrisici
           </h3>
         </div>
         <div class="">
-          <Image src={kapacitet} class="mx-auto pb-6" alt="Illustration af kapacitet" />
+          <Image
+            src={kapacitet}
+            class="mx-auto pb-6"
+            alt="Illustration af kapacitet"
+          />
           <h3 class="text-center">Øger lagring og server <br />kapacitet</h3>
         </div>
       </div>
@@ -80,14 +120,22 @@ import Karrusel from "../components/Karrusel.astro";
     <div class="mitelement2"><Karrusel /></div>
 
     <!-- Registrer dit bidrag -->
-    <section class="bg-orange py-8 px-6 md:py-10 md:px-32 md:grid md:grid-cols-2 gap-28">
+    <section
+      class="bg-orange py-8 px-6 md:py-10 md:px-32 md:grid md:grid-cols-2 gap-28"
+    >
       <div class="grid align-middle gap-2 md:my-10 mb-7">
-        <h2>Registrer dit bidrag</h2>
-        <p class="mb-7">
-          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
-          omstrukturere deres online tilstedeværelse.
+        <h2 class="text-black">Registrer dit bidrag</h2>
+        <p class="mb-7 text-black">
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores
+          digitale liv, ligesom vi rydder op i vores fysiske miljø på World
+          Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World,
+          har Digital Cleanup Day til formål at øge bevidstheden om digital
+          forurening og opfordre enkeltpersoner og virksomheder til at rydde op
+          og omstrukturere deres online tilstedeværelse.
         </p>
-        <Link href="#" target="_blank" variant="secondary" size="small">Del med en ven</Link>
+        <Link href="#" target="_blank" variant="secondary" size="small"
+          >Del med en ven</Link
+        >
       </div>
       <Image src={skraldespand} alt="Billede af skaldespand med filer i" />
     </section>
