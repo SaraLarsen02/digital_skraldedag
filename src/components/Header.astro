@@ -4,69 +4,67 @@ import logo from "../assets/images/logo.svg";
 import Link from "../components/Link.astro";
 ---
 
-<div x-data="{ showmenu: false }" class="p-5 top-0 w-full bg-blaa">
+<div x-data="{ showmenu: false }" class="p-5 top-0 bg-blaa w-full">
   <div id="navbar" class="flex flex-row justify-between items-center">
     <!-- Logo -->
-    <a href="/" class="w-28">
+    <a href="/" id="logo" class="w-28">
       <Image src={logo} alt="Digital skraldedag logo" />
     </a>
     <!-- Desktop menu -->
-    <nav id="desktopmenu" class="hidden md:block">
+    <nav id="desktopmenu" class="hidden lg:block">
       <ul class="flex flex-row gap-4 items-center">
         <li class="mr-2">
-          <Link href="/how" variant="textlink">How to<Link /> </Link>
-          <li class="mr-2">
-            <Link href="/registrer" variant="textlink"
-              >Registrer bidrag<Link />
-            </Link>
-          </li>
-          <Link href="/registrer" variant="primary" size="small"
-            >Registrer bidrag
-          </Link>
+          <Link href="/how" variant="textlink">How to</Link>
         </li>
-      </ul>
-      <!-- Burger menu -->
-      <button
-        id="burgermenu"
-        class="md:hidden text-white"
-        x-on:click="showmenu = ! showmenu"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-9"
+        <li class="mr-2">
+          <Link href="/registrer" variant="textlink">Registrer indhold</Link>
+        </li>
+        <Link href="/registrer" variant="primary" size="small"
+          >Registrer bidrag</Link
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-        </svg>
-      </button>
-    </nav>
-    <!-- Mobil menu -->
-    <nav
-      id="mobilmenu"
-      class="flex flex-col content-center pt-4"
-      x-show="showmenu"
-      x-transition
-      x-on:click="showmenu = false"
-      x-on:click.outside="showmenu = false"
-    >
-      <ul class="flex flex-col items-center pb-5">
-        <li class="text-center py-2">
-          <a href="/how">How to</a>
-        </li>
-        <li class="text-center py-2">
-          <a href="/registrer">Registrer bidrag</a>
-        </li>
-        <div class="mt-4">
-          <Link href="/registrer" variant="primary" size="small"
-            >Registrer bidrag
-          </Link>
-        </div>
       </ul>
     </nav>
+    <!-- Burger menu -->
+    <button
+      id="burgermenu"
+      class="lg:hidden text-white"
+      x-on:click="showmenu = ! showmenu"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-9"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+      </svg>
+    </button>
   </div>
+  <!-- Mobil menu -->
+  <nav
+    id="mobilmenu"
+    class="flex flex-col content-center pt-4"
+    x-show="showmenu"
+    x-transition
+    x-on:click="showmenu = false"
+    x-on:click.outside="showmenu = false"
+  >
+    <ul class="pb-5">
+      <li class="text-center py-2">
+        <Link href="/how" variant="textlink">How to</Link>
+      </li>
+      <li class="text-center py-2">
+        <Link href="/registrer" variant="textlink">Registrer bidrag</Link>
+      </li>
+      <li class="text-center py-2 mt-4">
+        <Link href="/registrer" variant="primary" size="small"
+          >Registrer bidrag</Link
+        >
+      </li>
+    </ul>
+  </nav>
 </div>
