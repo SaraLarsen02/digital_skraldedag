@@ -13,58 +13,60 @@ import Link from "../components/Link.astro";
     <!-- Desktop menu -->
     <nav id="desktopmenu" class="hidden md:block">
       <ul class="flex flex-row gap-4 items-center">
-        <li class="mr-2 hover:border-b-[1px]">
+        <li class="mr-2">
+          <Link href="/how" variant="textlink">How to<Link /> </Link>
+          <li class="mr-2">
+            <Link href="/registrer" variant="textlink"
+              >Registrer bidrag<Link />
+            </Link>
+          </li>
+          <Link href="/registrer" variant="primary" size="small"
+            >Registrer bidrag
+          </Link>
+        </li>
+      </ul>
+      <!-- Burger menu -->
+      <button
+        id="burgermenu"
+        class="md:hidden text-white"
+        x-on:click="showmenu = ! showmenu"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-9"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobil menu -->
+    <nav
+      id="mobilmenu"
+      class="flex flex-col content-center pt-4"
+      x-show="showmenu"
+      x-transition
+      x-on:click="showmenu = false"
+      x-on:click.outside="showmenu = false"
+    >
+      <ul class="flex flex-col items-center pb-5">
+        <li class="text-center py-2">
           <a href="/how">How to</a>
         </li>
-        <li class="mr-2 hover:border-b-[1px]">
+        <li class="text-center py-2">
           <a href="/registrer">Registrer bidrag</a>
         </li>
-        <Link href="/registrer" variant="primary" size="small"
-          >Registrer bidrag
-        </Link>
+        <div class="mt-4">
+          <Link href="/registrer" variant="primary" size="small"
+            >Registrer bidrag
+          </Link>
+        </div>
       </ul>
     </nav>
-    <!-- Burger menu -->
-    <button
-      id="burgermenu"
-      class="md:hidden text-white"
-      x-on:click="showmenu = ! showmenu"
-      ><svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="size-9"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-      </svg>
-    </button>
   </div>
-  <!-- Mobil menu -->
-  <nav
-    id="mobilmenu"
-    class="flex flex-col content-center pt-4"
-    x-show="showmenu"
-    x-transition
-    x-on:click="showmenu = false"
-    x-on:click.outside="showmenu = false"
-  >
-    <ul class="flex flex-col items-center pb-5">
-      <li class="text-center py-2">
-        <a href="/how">How to</a>
-      </li>
-      <li class="text-center py-2">
-        <a href="/registrer">Registrer bidrag</a>
-      </li>
-      <div class="mt-4">
-        <Link href="/registrer" variant="primary" size="small"
-          >Registrer bidrag
-        </Link>
-      </div>
-    </ul>
-  </nav>
 </div>

@@ -37,7 +37,7 @@ import Karrusel from "../components/Karrusel.astro";
 
     <!-- Hvad er Digital Skraldedag? -->
     <section
-      class="mx-2 md:mx-28 bg-moerkeblaa rounded-3xl px-6 py-10 md:p-40 md:grid md:grid-cols-5 mitelement6"
+      class="mx-2 md:mx-28 bg-moerkeblaa rounded-3xl px-6 py-10 md:p-40 md:grid md:grid-cols-5 mitelement"
     >
       <div class="col-span-3 flex flex-col gap-3 md:gap-10 my-auto">
         <h2>Hvad er Digital Skraldedag?</h2>
@@ -61,17 +61,17 @@ import Karrusel from "../components/Karrusel.astro";
     <section class="mx-2 md:mx-28">
       <h2 class="text-center">Hvorfor slippe af med digitalt skrald?</h2>
       <div class="grid gap-20 md:grid-cols-3 mt-8 md:mt-24 mb-12">
-        <div class="mitelement">
+        <div class="">
           <Image src={jordklode} class="mx-auto pb-6" alt="" />
           <h3 class="text-center">
             Hjælper med at reducere <br />CO2-udledning
           </h3>
         </div>
-        <div class="mitelement2">
+        <div class="">
           <Image src={enheder} class="mx-auto pb-6" alt="" />
           <h3 class="text-center">Forlænger dine <br />enheders levetid</h3>
         </div>
-        <div class="mitelement3">
+        <div class="">
           <Image src={deling} class="mx-auto pb-6" alt="" />
           <h3 class="text-center">
             Fremskynder deling og <br />søgning af information
@@ -79,13 +79,13 @@ import Karrusel from "../components/Karrusel.astro";
         </div>
       </div>
       <div class="grid gap-20 md:grid-cols-2 md:mx-48">
-        <div class="mitelement4">
+        <div class="">
           <Image src={datalagring} class="mx-auto pb-6" alt="" />
           <h3 class="text-center">
             Reducerer datalagring <br />sikkerhedsrisici
           </h3>
         </div>
-        <div class="mitelement5">
+        <div class="">
           <Image src={kapacitet} class="mx-auto pb-6" alt="" />
           <h3 class="text-center">Øger lagring og server <br />kapacitet</h3>
         </div>
@@ -93,7 +93,7 @@ import Karrusel from "../components/Karrusel.astro";
     </section>
 
     <!-- Vidste du... -->
-    <Karrusel />
+    <div class="mitelement2"><Karrusel /></div>
 
     <!-- Registrer dit bidrag -->
     <section
@@ -132,45 +132,17 @@ import Karrusel from "../components/Karrusel.astro";
 <script>
   import { inView } from "motion";
 
-  // Jordklode
+  // Hvad er digital skraldedag?
   const inviewelement = document.querySelector(".mitelement");
 
   inView(inviewelement, () => {
     inviewelement.classList.add("animate__animated", "animate__fadeInUp");
   });
 
-  // Enheder
+  // Vidste du?
   const inviewelement2 = document.querySelector(".mitelement2");
 
   inView(inviewelement2, () => {
     inviewelement2.classList.add("animate__animated", "animate__fadeInUp");
-  });
-
-  // Deling
-  const inviewelement3 = document.querySelector(".mitelement3");
-
-  inView(inviewelement3, () => {
-    inviewelement3.classList.add("animate__animated", "animate__fadeInUp");
-  });
-
-  // Datalagring
-  const inviewelement4 = document.querySelector(".mitelement4");
-
-  inView(inviewelement4, () => {
-    inviewelement4.classList.add("animate__animated", "animate__fadeInUp");
-  });
-
-  // Kapacitet
-  const inviewelement5 = document.querySelector(".mitelement5");
-
-  inView(inviewelement5, () => {
-    inviewelement5.classList.add("animate__animated", "animate__fadeInUp");
-  });
-
-  // Spørgsmålstegn
-  const inviewelement6 = document.querySelector(".mitelement6");
-
-  inView(inviewelement6, () => {
-    inviewelement6.classList.add("animate__animated", "animate__fadeInUp");
   });
 </script>

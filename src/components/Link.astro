@@ -7,11 +7,12 @@ const {
   size = "standard",
 } = Astro.props;
 
-const linkStyling = "rounded-full";
+const linkStyling = "";
 const variantClasses = {
-  textlink: "text-black underline",
-  primary: "bg-orange text-moerkeblaa",
-  secondary: "bg-blaa text-white",
+  textlink: "text-white hover:border-b-[1px] border-white",
+  primary: "bg-orange text-moerkeblaa rounded-full",
+  secondary: "bg-blaa text-white rounded-full",
+  bannerlink: "text-black hover:border-b-[1px] border-black",
 };
 const sizeClasses = {
   small:
