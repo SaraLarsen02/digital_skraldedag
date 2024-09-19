@@ -1,6 +1,11 @@
 ---
 // Henter parametrene fra Astro.props
-const { href = "#", target = "_self", variant = "textlink", size = "standard" } = Astro.props;
+const {
+  href = "#",
+  target = "_self",
+  variant = "textlink",
+  size = "standard",
+} = Astro.props;
 
 const linkStyling = "rounded-full";
 const variantClasses = {
@@ -9,8 +14,14 @@ const variantClasses = {
   secondary: "bg-blaa text-white",
 };
 const sizeClasses = {
-  small: "px-6 py-2.5 md:text-xl text-sm hover:px-7 hover:py-3 w-fit",
+  small:
+    "px-6 py-2.5 md:text-xl text-sm transition-all hover:scale-110 duration-500 w-fit",
 };
 ---
 
-<a href={href} target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot /></a>
+<a
+  href={href}
+  target={target}
+  class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}
+  ><slot /></a
+>

@@ -16,19 +16,19 @@ import youtube from "../assets/images/youtube.svg";
   <div
     class="bg-blaa flex flex-col md:flex-row justify-center gap-16 md:gap-40 text-center p-20 mt-10 md:mt-15 items-center"
   >
-    <div>
+    <div class="fadein">
       <Image src={deltagere} alt="" />
       <div class="pt-4">
         <h2>1.184.747</h2>
         <h3 class="pt-2">Deltagere</h3>
       </div>
     </div>
-    <div>
+    <div class="fadein2">
       <Image src={data} alt="" />
       <h2 class="pt-4">14.5 M GB</h2>
       <h3 class="pt-2">Data slettet</h3>
     </div>
-    <div>
+    <div class="fadein3">
       <Image src={jordklode} alt="" />
       <h2 class="pt-4">3,625 tons</h2>
       <h3 class="pt-2">Co2 forhindret årligt</h3>
@@ -63,3 +63,28 @@ import youtube from "../assets/images/youtube.svg";
     </div>
   </div>
 </div>
+
+<script>
+  import { inView } from "motion";
+
+  //   Deltagere
+  const inviewelement = document.querySelector(".fadein");
+
+  inView(inviewelement, () => {
+    inviewelement.classList.add("animate__animated", "animate__fadeIn");
+  });
+
+  //   Data
+  const inviewelement2 = document.querySelector(".fadein2");
+
+  inView(inviewelement2, () => {
+    inviewelement2.classList.add("animate__animated", "animate__fadeIn");
+  });
+
+  //   Jordklode
+  const inviewelement3 = document.querySelector(".fadein3");
+
+  inView(inviewelement3, () => {
+    inviewelement3.classList.add("animate__animated", "animate__fadeIn");
+  });
+</script>

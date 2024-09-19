@@ -20,50 +20,72 @@ import Karrusel from "../components/Karrusel.astro";
     <section class="mx-2 md:mx-28 md:grid md:grid-cols-5">
       <div class="col-span-2 grid gap-5 md:gap-10 md:my-auto">
         <h1 class="leading-tight">Digital Skraldedag</h1>
-        <p class="font-poppins text-[20px] md:text-[37px]">Ryd op i dit digitale affald!</p>
+        <p class="font-poppins text-[20px] md:text-[37px]">
+          Ryd op i dit digitale affald!
+        </p>
         <div class="flex flex-row gap-5 md:gap-10 md:my-5">
-          <Link href="#" target="_blank" variant="primary" size="small">Save the date</Link>
-          <Link href="#" target="_blank" variant="primary" size="small">Del med ven</Link>
+          <Link href="#" target="_blank" variant="primary" size="small"
+            >Save the date</Link
+          >
+          <Link href="#" target="_blank" variant="primary" size="small"
+            >Del med ven</Link
+          >
         </div>
       </div>
       <Image src={hero_img} class="w-full col-span-3 mt-10" alt="" />
     </section>
 
     <!-- Hvad er Digital Skraldedag? -->
-    <section class="mx-2 md:mx-28 bg-moerkeblaa rounded-3xl px-6 py-10 md:p-40 md:grid md:grid-cols-5">
+    <section
+      class="mx-2 md:mx-28 bg-moerkeblaa rounded-3xl px-6 py-10 md:p-40 md:grid md:grid-cols-5 mitelement6"
+    >
       <div class="col-span-3 flex flex-col gap-3 md:gap-10 my-auto">
         <h2>Hvad er Digital Skraldedag?</h2>
         <p>
-          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
-          omstrukturere deres online tilstedeværelse.
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores
+          digitale liv, ligesom vi rydder op i vores fysiske miljø på World
+          Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World,
+          har Digital Cleanup Day til formål at øge bevidstheden om digital
+          forurening og opfordre enkeltpersoner og virksomheder til at rydde op
+          og omstrukturere deres online tilstedeværelse.
         </p>
       </div>
-      <Image src={spoergsmaalstegn} class="mx-auto col-span-2 p-10 md:p-0" alt="" />
+      <Image
+        src={spoergsmaalstegn}
+        class="mx-auto col-span-2 p-10 md:p-0"
+        alt=""
+      />
     </section>
 
     <!-- Hvorfor slippe af med digitalt skrald? -->
     <section class="mx-2 md:mx-28">
       <h2 class="text-center">Hvorfor slippe af med digitalt skrald?</h2>
       <div class="grid gap-20 md:grid-cols-3 mt-8 md:mt-24 mb-12">
-        <div>
+        <div class="mitelement">
           <Image src={jordklode} class="mx-auto pb-6" alt="" />
-          <h3 class="text-center">Hjælper med at reducere <br />CO2-udledning</h3>
+          <h3 class="text-center">
+            Hjælper med at reducere <br />CO2-udledning
+          </h3>
         </div>
-        <div>
+        <div class="mitelement2">
           <Image src={enheder} class="mx-auto pb-6" alt="" />
           <h3 class="text-center">Forlænger dine <br />enheders levetid</h3>
         </div>
-        <div>
+        <div class="mitelement3">
           <Image src={deling} class="mx-auto pb-6" alt="" />
-          <h3 class="text-center">Fremskynder deling og <br />søgning af information</h3>
+          <h3 class="text-center">
+            Fremskynder deling og <br />søgning af information
+          </h3>
         </div>
       </div>
       <div class="grid gap-20 md:grid-cols-2 md:mx-48">
-        <div>
+        <div class="mitelement4">
           <Image src={datalagring} class="mx-auto pb-6" alt="" />
-          <h3 class="text-center">Reducerer datalagring <br />sikkerhedsrisici</h3>
+          <h3 class="text-center">
+            Reducerer datalagring <br />sikkerhedsrisici
+          </h3>
         </div>
-        <div>
+        <div class="mitelement5">
           <Image src={kapacitet} class="mx-auto pb-6" alt="" />
           <h3 class="text-center">Øger lagring og server <br />kapacitet</h3>
         </div>
@@ -74,16 +96,22 @@ import Karrusel from "../components/Karrusel.astro";
     <Karrusel />
 
     <!-- Registrer dit bidrag -->
-    <section class="bg-orange py-8 px-6 md:py-10 md:px-32 md:grid md:grid-cols-2 gap-28">
-      <div class="grid align-middle gap-2 md:my-10">
+    <section
+      class="bg-orange py-8 px-6 md:py-10 md:px-32 md:grid md:grid-cols-2 gap-28"
+    >
+      <div class="grid align-middle gap-2 md:my-10 mb-7">
         <h2>Registrer dit bidrag</h2>
-        <p>
-          Digital Cleanup Day er en dag dedikeret til at rydde op i vores digitale liv, ligesom vi rydder op i vores fysiske miljø på World Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World, har Digital Cleanup Day til formål at øge bevidstheden om digital forurening og opfordre enkeltpersoner og virksomheder til at rydde op og
-          omstrukturere deres online tilstedeværelse.
+        <p class="mb-7">
+          Digital Cleanup Day er en dag dedikeret til at rydde op i vores
+          digitale liv, ligesom vi rydder op i vores fysiske miljø på World
+          Cleanup Day. Nu i sit femte år, og organiseret af Let's Do It World,
+          har Digital Cleanup Day til formål at øge bevidstheden om digital
+          forurening og opfordre enkeltpersoner og virksomheder til at rydde op
+          og omstrukturere deres online tilstedeværelse.
         </p>
-        <div class="my-8 md:my-0 md:mt-4">
-          <Link href="#" target="_blank" variant="secondary" size="small">Del med ven</Link>
-        </div>
+        <Link href="#" target="_blank" variant="secondary" size="small"
+          >Del med en ven</Link
+        >
       </div>
       <Image src={skraldespand} alt="" />
     </section>
@@ -100,3 +128,49 @@ import Karrusel from "../components/Karrusel.astro";
     <p></p> -->
   </article>
 </MainLayout>
+
+<script>
+  import { inView } from "motion";
+
+  // Jordklode
+  const inviewelement = document.querySelector(".mitelement");
+
+  inView(inviewelement, () => {
+    inviewelement.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  // Enheder
+  const inviewelement2 = document.querySelector(".mitelement2");
+
+  inView(inviewelement2, () => {
+    inviewelement2.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  // Deling
+  const inviewelement3 = document.querySelector(".mitelement3");
+
+  inView(inviewelement3, () => {
+    inviewelement3.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  // Datalagring
+  const inviewelement4 = document.querySelector(".mitelement4");
+
+  inView(inviewelement4, () => {
+    inviewelement4.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  // Kapacitet
+  const inviewelement5 = document.querySelector(".mitelement5");
+
+  inView(inviewelement5, () => {
+    inviewelement5.classList.add("animate__animated", "animate__fadeInUp");
+  });
+
+  // Spørgsmålstegn
+  const inviewelement6 = document.querySelector(".mitelement6");
+
+  inView(inviewelement6, () => {
+    inviewelement6.classList.add("animate__animated", "animate__fadeInUp");
+  });
+</script>
